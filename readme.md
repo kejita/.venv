@@ -2,9 +2,9 @@ This is kejita's git.
 Thank you for your coming this space!
 
 [about me]    
-my job => data analyst
-to be => data engineer
-in studying => python & ML & AI
+my job => data analyst    
+to be => data engineer    
+in studying => python & ML & AI    
 
 [about git]   
 超短縮メモ（VSCodeだけで完結）
