@@ -66,8 +66,8 @@ with st.sidebar:
 # モデルのロード
 # ------------------------------
 try:
-    model = load_model("model.pkl")
-    st.success("モデルをロードしました: model.pkl")
+    model = load_model("titanic_SVC_linear.ipynb")
+    st.success("モデルをロードしました: titanic_SVC_linear.ipynb")
 except Exception as e:
     st.error(f"モデルのロードに失敗しました: {e}")
     st.stop()
