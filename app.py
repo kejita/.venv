@@ -1,5 +1,6 @@
 # app.py（読み込み部のコア。あなたの既存 app.py に合体してOK）
 import json, joblib, pandas as pd, numpy as np, streamlit as st
+from datetime import datetime
 
 st.set_page_config(page_title="Titanic SVC", page_icon="🚢", layout="centered")
 st.title("🚢 Titanic — SVC Predictor")
@@ -62,6 +63,7 @@ if csv:
         if proba.shape[1] == 2:
             out["proba_1"] = proba[:,1]
 
+    dt = datetime.now().strftime("%y%m%d_%H%M")
     st.dataframe(out.head())
     st.download_button("結果をダウンロード", out.to_csv(index=False).encode("utf-8"),
-                       file_name="predictions.csv", mime="text/csv")
+                       file_name=dt+"predictions.csv", mime="text/csv")
