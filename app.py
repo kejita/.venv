@@ -23,7 +23,7 @@ st.caption("学習済みモデルを使って、単発入力 or CSV 一括で予
 # モデル読込（キャッシュ）
 # ------------------------------
 @st.cache_resource
-def load_model(path: str = "model.pkl"):
+def load_model(path: str = "titanic_SVC_linear.ipynb"):
     model = joblib.load(path)
     return model
 
